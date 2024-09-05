@@ -5,7 +5,7 @@
       "pattern": [
         {
           "regexp": "^(Error):$",
-          "severity": 4
+          "severity": 1
         },
         {
           "regexp": "^\\s+\\S*x\\S* (.+)$",
