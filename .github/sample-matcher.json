@@ -1,0 +1,23 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "next-build",
+      "pattern": [
+        {
+          "regexp": "^(Error):$",
+          "severity": 4
+        },
+        {
+          "regexp": "^\\s+\\S*x\\S* (.+)$",
+          "message": 1
+        },
+        {
+          "regexp": "\\[(.+):(\\d+):(\\d+)\\]$",
+          "file": 1,
+          "line": 2,
+          "column": 3
+        }
+      ]
+    }
+  ]
+}
