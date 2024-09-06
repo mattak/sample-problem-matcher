@@ -2,10 +2,14 @@
   "problemMatcher": [
     {
       "owner": "next-build",
+      "severity": "error",
       "pattern": [
         {
-          "regexp": "^(Error):$",
-          "severity": 1
+          "regexp": "^(\\./.+)$",
+          "file": 1
+        },
+        {
+          "regexp": "^\\s*Error:\\s*$"
         },
         {
           "regexp": "^\\s+\\S*x\\S* (.+)$",
@@ -13,9 +17,15 @@
         },
         {
           "regexp": "\\[(.+):(\\d+):(\\d+)\\]$",
-          "file": 1,
           "line": 2,
           "column": 3
+        },
+        {
+          "regexp": "^\\s*Caused by:\\s*$"
+        },
+        {
+          "regexp": "^\\s+(.+)$",
+          "code": 1
         }
       ]
     }
